@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Bank - Register</title>
+    <!-- Add SEO Best Practices -->
+    <meta name="description"
+        content="Nexus Bank Sign Up - Create an account to experience modern, secure and beautiful banking.">
+    <!-- Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="auth-wrapper">
+        <main class="auth-card">
+            <header class="auth-header">
+                <div class="logo">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span>NexusBank</span>
+                </div>
+                <h1>Create Account</h1>
+                <p>Join NexusBank to manage your finances</p>
+            </header>
+
+            <form id="register-form" class="auth-form">
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" placeholder="John Doe" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="john@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required minlength="6">
+                </div>
+                <div id="auth-message" class="message" role="alert"></div>
+                <button type="submit" class="btn btn-primary full-width">Create Account</button>
+            </form>
+
+            <footer class="auth-footer">
+                Already have an account? <a href="index.html">Log in</a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+
+</html>
